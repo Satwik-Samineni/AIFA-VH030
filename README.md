@@ -41,10 +41,13 @@ Ready to invest in your own farming drone? AIFA partners with reputable drone ma
 AIFA is made possible by a team of passionate individuals dedicated to making farming easier and more accessible.
 
 Samineni Satwik: Lead Developer
+Email: satwiksamineni11@gmail.com
 
 Harika Damuluri: UX Designer
+Email: 99210042196@gmail.com
 
 Govinda Rao: Agriculture Expert
+Email: 99210041282@klu.ac.in
 
 Let's Grow Together!
 
