@@ -32,7 +32,7 @@ class BankPage extends StatelessWidget {
         ),
       ],
     ),
-    // Add more banks here
+    
   ];
 
   @override
@@ -44,7 +44,7 @@ class BankPage extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.search),
             onPressed: () {
-              // Add your search logic here
+              
             },
           ),
         ],
