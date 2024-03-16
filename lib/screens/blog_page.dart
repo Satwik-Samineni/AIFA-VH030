@@ -5,23 +5,17 @@ class BlogPage extends StatelessWidget {
     BlogPost(
       title: '10 Modern Agricultural Techniques You Should Know',
       category: 'Agriculture',
-      onTap: () {
-        // Navigate to the specific blog post
-      },
+      onTap: () {},
     ),
     BlogPost(
       title: 'Revolutionizing Farming with Agri-Tech Innovations',
       category: 'Agri-Technology',
-      onTap: () {
-        // Navigate to the specific blog post
-      },
+      onTap: () {},
     ),
     BlogPost(
       title: 'Step-by-Step Guide to Implementing Vertical Farming',
       category: 'New Methods',
-      onTap: () {
-        // Navigate to the specific blog post
-      },
+      onTap: () {},
     ),
     // Add more blog posts here
   ];
@@ -54,7 +48,7 @@ class BlogPage extends StatelessWidget {
                         color: Colors.grey.withOpacity(0.5),
                         spreadRadius: 2,
                         blurRadius: 5,
-                        offset: Offset(0, 3), // changes position of shadow
+                        offset: Offset(0, 3),
                       ),
                     ],
                   ),
