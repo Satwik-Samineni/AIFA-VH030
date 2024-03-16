@@ -18,7 +18,7 @@ class SignUpScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Sign Up heading with white text
+                  
                   Text(
                     'Sign Up',
                     style: Theme.of(context)
@@ -28,12 +28,12 @@ class SignUpScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 40.0),
 
-                  // Form with adjusted spacing
+                  
                   Form(
-                    // ... your form validation logic (if needed)
+                  
                     child: Column(
                       children: [
-                        // Email field
+                        
                         TextFormField(
                           decoration: InputDecoration(
                             labelText: 'Email',
@@ -50,7 +50,7 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 10.0),
 
-                        // Username field (same as SignInScreen)
+                        
                         TextFormField(
                           decoration: InputDecoration(
                             labelText: 'Username',
@@ -66,7 +66,7 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 10.0),
 
-                        // Password field (same as SignInScreen)
+                        
                         TextFormField(
                           decoration: InputDecoration(
                             labelText: 'Password',
@@ -84,28 +84,28 @@ class SignUpScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20.0), // Spacing before buttons
+                  const SizedBox(height: 20.0), 
 
-                  // Row for social login icons (placeholders)
+                  
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Google Sign-In icon (placeholder)
+                      
                       IconButton(
                         onPressed: () {
-                          // Add your Google sign-in logic here (optional)
+                          
                         },
                         icon: const Icon(
                           FontAwesomeIcons.google,
                           color: Colors.white,
                         ),
                       ),
-                      const SizedBox(width: 20.0), // Spacing between icons
+                      const SizedBox(width: 20.0), 
 
-                      // Facebook Sign-In icon (placeholder)
+                    
                       IconButton(
                         onPressed: () {
-                          // Add your Facebook sign-in logic here (optional)
+                          
                         },
                         icon: const Icon(
                           FontAwesomeIcons.facebook,
@@ -115,18 +115,18 @@ class SignUpScreen extends StatelessWidget {
                     ],
                   ),
 
-                  // Sign Up button (replace with your logic)
+                  
                   ElevatedButton(
                     onPressed: () {
-                      // Implement your sign-up functionality
+                      
                     },
                     child: const Text('Sign Up'),
                   ),
 
-                  // Text for navigating back to SignIn screen (modified)
+                  
                   TextButton(
                     onPressed: () {
-                      // Use Navigator.pushReplacement to replace current screen
+                      
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
@@ -143,7 +143,7 @@ class SignUpScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            // Position the AIFA text at the top middle
+            
             top: 0,
             left: 0,
             right: 0,
