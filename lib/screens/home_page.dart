@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
-import 'gemini_api.dart'; 
+import 'blog_page.dart';
+import 'cost_estimation_page.dart';
 import 'crop_recommendation_page.dart';
-import 'cost_estimation_page.dart'; 
-import 'profile_page.dart'; 
+import 'drone_renatl_page.dart';
 import 'pesticide_page.dart';
-import 'blog_page.dart'; 
+import 'profile_page.dart';
+import 'loan_details.dart';
+import 'credit_page.dart';
+import 'transport_availability_page.dart';
+import 'transportation_page.dart';
+import 'market_insights_page.dart';
+import 'drone_purchase_page.dart'; 
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,25 +20,23 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0; 
+  int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
     Text('Home Page Content'),
-    Text('Blog Content'), 
-    Text('Profile Content'), 
+    Text('Blog Content'),
+    Text('Profile Content'),
   ];
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
       if (index == 1) {
-        
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => BlogPage()),
         );
       } else if (index == 2) {
-        
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => ProfilePage()),
@@ -56,18 +58,7 @@ class _HomePageState extends State<HomePage> {
         actions: [
           IconButton(
             icon: Icon(Icons.search),
-            onPressed: () {
-              
-            },
-          ),
-          IconButton(
-            
-            icon: Icon(Icons.chat), 
-            onPressed: () {
-              
-              fetchChatbotResponse(
-                  'Hello'); 
-            },
+            onPressed: () {},
           ),
         ],
       ),
@@ -77,7 +68,6 @@ class _HomePageState extends State<HomePage> {
           children: [
             _buildSector('Crop', [
               _buildCurvedRectangleCard('Recommendation', () {
-                
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -86,7 +76,6 @@ class _HomePageState extends State<HomePage> {
                 );
               }),
               _buildCurvedRectangleCard('Cost Estimation', () {
-                
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -95,7 +84,6 @@ class _HomePageState extends State<HomePage> {
                 );
               }),
               _buildCurvedRectangleCard('Pesticide', () {
-                
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -103,18 +91,69 @@ class _HomePageState extends State<HomePage> {
                   ),
                 );
               }),
+              _buildCurvedRectangleCard('Market Insights', () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MarketInsightsPage(),
+                  ),
+                );
+              }),
             ]),
             _buildSector('Bank Sector', [
-              _buildCurvedRectangleCard('Loan and Interest Details', () {}),
-              _buildCurvedRectangleCard('Credit By AIFA', () {}),
+              _buildCurvedRectangleCard('Loan and Interest Details', () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BankPage(),
+                  ),
+                );
+              }),
+              _buildCurvedRectangleCard('Credit By AIFA', () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CreditPage(),
+                  ),
+                );
+              }),
             ]),
             _buildSector('Transportation Sector', [
-              _buildCurvedRectangleCard('Transport Details', () {}),
-              _buildCurvedRectangleCard('AIFA Transport Availability', () {}),
+              _buildCurvedRectangleCard('Transport Details', () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TransportationPage(),
+                  ),
+                );
+              }),
+              _buildCurvedRectangleCard('AIFA Transport Availability', () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TransportAvailabilityPage(),
+                  ),
+                );
+              }),
             ]),
             _buildSector('Drone Sector', [
-              _buildCurvedRectangleCard('Drone Rental ', () {}),
-              _buildCurvedRectangleCard('Drone Purchase ', () {}),
+              _buildCurvedRectangleCard('Drone Rental ', () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DroneRentalPage(),
+                  ),
+                );
+              }),
+              _buildCurvedRectangleCard('Drone Purchase ', () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        DronePurchasePage(), // Redirect to DronePurchasePage
+                  ),
+                );
+              }),
             ]),
           ],
         ),
@@ -135,7 +174,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue, 
+        selectedItemColor: Colors.blue,
         onTap: _onItemTapped,
       ),
     );
@@ -174,8 +213,8 @@ class _HomePageState extends State<HomePage> {
         ),
         elevation: 5.0,
         child: Container(
-          width: 200, 
-          height: 150, 
+          width: 200,
+          height: 150,
           child: Center(
             child: Text(
               title,
@@ -186,10 +225,4 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-}
-
-void main() {
-  runApp(const MaterialApp(
-    home: HomePage(),
-  ));
 }
