@@ -9,7 +9,7 @@ class CostEstimationPage extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pop(context); // Go back to the previous screen
+            Navigator.pop(context); 
           },
         ),
       ),
@@ -36,7 +36,7 @@ class CostEstimationPage extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  // Add your logic here for estimating cost
+                  
                 },
                 child: Text('Estimate Cost'),
               ),
@@ -66,7 +66,7 @@ class CostEstimationPage extends StatelessWidget {
           ),
           child: DropdownButton<String>(
             isExpanded: true,
-            underline: SizedBox(), // Remove default underline
+            underline: SizedBox(), 
             items: items.map((String value) {
               return DropdownMenuItem<String>(
                 value: value,
@@ -74,7 +74,7 @@ class CostEstimationPage extends StatelessWidget {
               );
             }).toList(),
             onChanged: (String? newValue) {
-              // Add your logic here for handling dropdown selection
+              
             },
           ),
         ),
