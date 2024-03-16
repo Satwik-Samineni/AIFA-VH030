@@ -30,7 +30,7 @@ class CropRecommendationPage extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  // Add logic for recommendation button
+                  
                 },
                 child: Text('Recommend'),
               ),
@@ -59,7 +59,7 @@ class CropRecommendationPage extends StatelessWidget {
           ),
           child: DropdownButton<String>(
             isExpanded: true,
-            underline: SizedBox(), // Remove default underline
+            underline: SizedBox(), 
             items: items.map((String value) {
               return DropdownMenuItem<String>(
                 value: value,
@@ -67,7 +67,7 @@ class CropRecommendationPage extends StatelessWidget {
               );
             }).toList(),
             onChanged: (String? newValue) {
-              // Add your logic here for handling dropdown selection
+              
             },
           ),
         ),
