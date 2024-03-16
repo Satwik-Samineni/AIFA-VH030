@@ -11,15 +11,15 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // Define initial route (replace with your preference)
+  
   static const String initialRoute = '/';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: initialRoute, // Set initial route
+      initialRoute: initialRoute, 
       routes: {
-        '/': (context) => const SignInScreen(), // Sign In as initial route
+        '/': (context) => const SignInScreen(), 
         '/sign_up': (context) => const SignUpScreen(),
         '/home': (context) => const HomePage(),
       },
