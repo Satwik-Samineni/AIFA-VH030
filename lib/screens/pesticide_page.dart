@@ -14,16 +14,16 @@ class PesticidePage extends StatelessWidget {
           children: [
             _buildDropdownField(
               label: 'Recommended Crop:',
-              items: ['Wheat', 'Rice', 'Maize'], // Example crop list
+              items: ['Wheat', 'Rice', 'Maize'], 
             ),
             SizedBox(height: 16.0),
             _buildTextField(
-                label: 'Number of Acres:'), // Text field for number of acres
+                label: 'Number of Acres:'), 
             SizedBox(height: 24.0),
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  // Add logic for submit button
+                  
                 },
                 child: Text('Submit'),
               ),
@@ -53,7 +53,7 @@ class PesticidePage extends StatelessWidget {
           ),
           child: DropdownButton<String>(
             isExpanded: true,
-            underline: SizedBox(), // Remove default underline
+            underline: SizedBox(), 
             items: items.map((String value) {
               return DropdownMenuItem<String>(
                 value: value,
@@ -61,7 +61,7 @@ class PesticidePage extends StatelessWidget {
               );
             }).toList(),
             onChanged: (String? newValue) {
-              // Add your logic here for handling dropdown selection
+              
             },
           ),
         ),
@@ -86,7 +86,7 @@ class PesticidePage extends StatelessWidget {
             border: Border.all(color: Colors.grey),
           ),
           child: TextField(
-            keyboardType: TextInputType.number, // Set keyboard type to number
+            keyboardType: TextInputType.number, 
             decoration: InputDecoration(
               border: InputBorder.none,
             ),
