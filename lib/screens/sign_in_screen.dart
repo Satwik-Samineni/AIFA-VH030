@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'sign_up_screen.dart';
-import 'home_page.dart'; // Import the HomePage file
+import 'home_page.dart'; 
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({Key? key});
@@ -9,10 +9,10 @@ class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black, // Set background color
+      backgroundColor: Colors.black, 
       body: Stack(
         children: [
-          // AIFA text in the middle of the top bar
+          
           Positioned(
             top: 40.0,
             left: 0,
@@ -31,13 +31,13 @@ class SignInScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Sign In content
+          
           Center(
             child: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Sign In heading with white text
+                  
                   Text(
                     'Sign In',
                     style: Theme.of(context)
@@ -47,9 +47,9 @@ class SignInScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 40.0),
 
-                  // Form with adjusted spacing
+                  
                   Form(
-                    // ... your form validation logic (if needed)
+                    
                     child: Column(
                       children: [
                         TextFormField(
@@ -81,28 +81,28 @@ class SignInScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 20.0), // Spacing before buttons
+                  const SizedBox(height: 20.0), 
 
-                  // Row for social login icons
+                  
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Google Sign-In icon (placeholder)
+                  
                       IconButton(
                         onPressed: () {
-                          // Add your Google sign-in logic here (optional)
+                          
                         },
                         icon: const Icon(
                           FontAwesomeIcons.google,
                           color: Colors.white,
                         ),
                       ),
-                      const SizedBox(width: 20.0), // Spacing between icons
+                      const SizedBox(width: 20.0), 
 
-                      // Facebook Sign-In icon (placeholder)
+                      
                       IconButton(
                         onPressed: () {
-                          // Add your Facebook sign-in logic here (optional)
+                          
                         },
                         icon: const Icon(
                           FontAwesomeIcons.facebook,
@@ -112,12 +112,9 @@ class SignInScreen extends StatelessWidget {
                     ],
                   ),
 
-                  // Sign In button (redirect to HomePage on success)
+                  
                   ElevatedButton(
                     onPressed: () {
-                      // Implement your sign-in functionality
-                      // For demonstration purposes, assume successful sign-in
-                      // and navigate to Home Page
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
@@ -127,10 +124,10 @@ class SignInScreen extends StatelessWidget {
                     child: const Text('Sign In'),
                   ),
 
-                  // Text for navigating to SignUp screen
+                  
                   TextButton(
                     onPressed: () {
-                      // Navigate to SignUp screen (replace with your navigation logic)
+                      
                       Navigator.push(
                         context,
                         MaterialPageRoute(
