@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart'; // Import the HomePage
-import 'sign_in_screen.dart'; // Import the SignInScreen
+import 'home_page.dart'; 
+import 'sign_in_screen.dart'; 
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -29,7 +29,7 @@ class ProfilePage extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 16.0),
                 child: ElevatedButton(
                   onPressed: () {
-                    // Navigate to the Sign In Page when Logout button is pressed
+                    
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(builder: (context) => SignInScreen()),
@@ -51,7 +51,7 @@ class ProfilePage extends StatelessWidget {
               IconButton(
                 icon: Icon(Icons.home),
                 onPressed: () {
-                  // Navigate to the home page when Home icon is pressed
+                  
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => HomePage()),
@@ -61,13 +61,13 @@ class ProfilePage extends StatelessWidget {
               IconButton(
                 icon: Icon(Icons.book),
                 onPressed: () {
-                  // Handle navigation to Blog page if needed
+                  
                 },
               ),
               IconButton(
                 icon: Icon(Icons.person),
                 onPressed: () {
-                  // Handle navigation to Profile page if needed
+                  
                 },
               ),
             ],
