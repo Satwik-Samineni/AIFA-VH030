@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'gemini_api.dart'; // Import the gemini_api.dart file
+import 'gemini_api.dart'; 
 import 'crop_recommendation_page.dart';
-import 'cost_estimation_page.dart'; // Import the CostEstimationPage
-import 'profile_page.dart'; // Import the ProfilePage
-import 'pesticide_page.dart'; // Import the PesticidePage
-import 'blog_page.dart'; // Import the BlogPage
+import 'cost_estimation_page.dart'; 
+import 'profile_page.dart'; 
+import 'pesticide_page.dart';
+import 'blog_page.dart'; 
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,25 +16,25 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0; // Current selected index for navigation bar
+  int _selectedIndex = 0; 
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Text('Home Page Content'), // Replace with your home page content
-    Text('Blog Content'), // Replace with your blog page content
-    Text('Profile Content'), // Replace with your profile page content
+    Text('Home Page Content'),
+    Text('Blog Content'), 
+    Text('Profile Content'), 
   ];
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
       if (index == 1) {
-        // Navigate to the BlogPage when Blog button is pressed
+        
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => BlogPage()),
         );
       } else if (index == 2) {
-        // Navigate to the ProfilePage when Profile button is pressed
+        
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => ProfilePage()),
@@ -57,16 +57,16 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             icon: Icon(Icons.search),
             onPressed: () {
-              // Add logic for search
+              
             },
           ),
           IconButton(
-            // Button for Gemini Chatbot
-            icon: Icon(Icons.chat), // Change the icon to Gemini Chatbot icon
+            
+            icon: Icon(Icons.chat), 
             onPressed: () {
-              // Add logic to fetch chatbot response
+              
               fetchChatbotResponse(
-                  'Hello'); // Example message to send to chatbot
+                  'Hello'); 
             },
           ),
         ],
@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             _buildSector('Crop', [
               _buildCurvedRectangleCard('Recommendation', () {
-                // Navigate to the Crop Recommendation page
+                
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                 );
               }),
               _buildCurvedRectangleCard('Cost Estimation', () {
-                // Navigate to the Cost Estimation page
+                
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -95,7 +95,7 @@ class _HomePageState extends State<HomePage> {
                 );
               }),
               _buildCurvedRectangleCard('Pesticide', () {
-                // Navigate to the PesticidePage when Pesticide card is tapped
+                
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue, // Change selected item color
+        selectedItemColor: Colors.blue, 
         onTap: _onItemTapped,
       ),
     );
@@ -174,8 +174,8 @@ class _HomePageState extends State<HomePage> {
         ),
         elevation: 5.0,
         child: Container(
-          width: 200, // Adjust the width as needed
-          height: 150, // Adjust the height as needed
+          width: 200, 
+          height: 150, 
           child: Center(
             child: Text(
               title,
