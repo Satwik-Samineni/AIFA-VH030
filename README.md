@@ -35,7 +35,7 @@ Need some inspiration or advice for your farming journey? Dive into our collecti
 Looking for financial support for your farming endeavors? AIFA can show you nearby banks offering agricultural loans. We'll tell you about the types of loans available, how much you can borrow per acre, and the interest rates And Can Credit from our own Loan Services
 
 -> Rent Drones
-Want to get a bird's eye view of your farm? AIFA offers drone rental services! Capture aerial images and monitor your crops with ease.
+Want to get a bird's eye view of your farm? AIFA offers drone rental services! Capture aerial images and monitor your crops with ease and U can spray Pesticide nd U can use the drones for many other agriculutual practices.
 
 -> Purchase Drones
 Ready to invest in your own farming drone? AIFA partners with reputable drone manufacturers to offer you a selection of high-quality drones. Browse our catalog and find the perfect drone for your needs.
