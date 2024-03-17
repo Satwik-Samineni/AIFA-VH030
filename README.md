@@ -3,6 +3,9 @@ AIFA
 Welcome to AIFA!
 Hey there! Welcome to AIFA - your friendly farming companion app. 🌾
 
+We are unable to upload the demo vedio  in GitHub Sorry for that so we have Uploaded in the  drive and provided the linnk here.
+**THIS IS THE DEMO VEDIO OF OVER APP** - [https://drive.google.com/file/d/1UeJHEbmopqsQRQXWPFhO3jbLj220vKnt/view?usp=drive_link](url)
+
 NAMES AND EMAILS:
 
 Samineni Satwik
