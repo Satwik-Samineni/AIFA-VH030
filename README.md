@@ -15,7 +15,7 @@ Govinda Rao
 Email: 99210041282@klu.ac.in
 
 What's AIFA?
-AIFA stands for Artificial Intelligence in Farming Application. It's designed to help farmers like you with various farming tasks, all from the convenience of your phone.
+AIFA stands for All In One Farmer Assistance Application. It's designed to help farmers like you with various farming tasks, all from the convenience of your phone.
 
 What Can AIFA Do?
 
